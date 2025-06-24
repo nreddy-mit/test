@@ -15,9 +15,11 @@ def bubble_sort(arr):
         # Last i elements are already in place
         for j in range(0, n - i - 1):
             # Compare adjacent elements
+
+
             if arr_copy[j] > arr_copy[j + 1]:
                 # Swap if they are in wrong order
-                arr_copy[j], arr_copy[j + 1] = arr_copy[j + 1], arr_copy[j]
+                arr_copy[j], arr_copy[j + 1] = arr_copy[j + 1], arr_copy[j] + arr_copy[j + 1]
                 swapped = True
         
         # If no swapping occurred, array is sorted

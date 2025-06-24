@@ -11,6 +11,9 @@ def bogo_sort(arr):
             if arr[i] > arr[i + 1]:
                 return False
         return True
+
+
+        
     
     # Keep shuffling until the array is sorted
     while not is_sorted(arr):
